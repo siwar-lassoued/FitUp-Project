@@ -16,7 +16,7 @@ class HomeController extends AbstractController
         ]);
     }
 
-    #[Route('/contact', name: 'app_contact')]
+    #[Route('/home/contact', name: 'app_contact')]
     public function contact(): Response
     {
         return $this->render('contact.html.twig', [
@@ -24,7 +24,7 @@ class HomeController extends AbstractController
         ]);
     }
 
-    #[Route('/blog', name: 'app_blog')]
+    #[Route('/home/blog', name: 'app_blog')]
     public function blog(): Response
     {
         return $this->render('blog.html.twig', [
@@ -32,7 +32,7 @@ class HomeController extends AbstractController
         ]);
     }
 
-    #[Route('/success', name: 'app_success')]
+    #[Route('/home/success', name: 'app_success')]
     public function success(): Response
     {
         return $this->render('success-stories.html.twig', [
@@ -40,7 +40,7 @@ class HomeController extends AbstractController
         ]);
     }
 
-    #[Route('/about', name: 'app_about')]
+    #[Route('/home/about', name: 'app_about')]
     public function about(): Response
     {
         return $this->render('about.html.twig', [
@@ -56,7 +56,7 @@ class HomeController extends AbstractController
         ]);
     }
 
-    #[Route('/pricing', name: 'app_pricing')]
+    #[Route('/home/pricing', name: 'app_pricing')]
     public function pricing(): Response
     {
         return $this->render('pricing.html.twig', [
@@ -64,7 +64,7 @@ class HomeController extends AbstractController
         ]);
     }
 
-    #[Route('/services', name: 'app_services')]
+    #[Route('/home/services', name: 'app_services')]
     public function services(): Response
     {
         return $this->render('services.html.twig', [

@@ -7,6 +7,13 @@
     <list default="true" id="0f2d5d27-424f-47bd-b179-1f741ccd82d1" name="Changes" comment="twig">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/coach.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/coach.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/coach/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/coach/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/coach/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/coach/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/coach/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/coach/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/coach/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/coach/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/coach/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/coach/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/coach/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/coach/show.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -227,7 +234,7 @@
       <workItem from="1732542811713" duration="14364000" />
       <workItem from="1732568160852" duration="4212000" />
       <workItem from="1732572446975" duration="4965000" />
-      <workItem from="1732611914002" duration="9625000" />
+      <workItem from="1732611914002" duration="13994000" />
     </task>
     <servers />
   </component>

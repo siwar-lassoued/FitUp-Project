@@ -1,13 +1,47 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Edit Coach{% endblock %}
+{% block title %}Modifier le Coach{% endblock %}
 
 {% block body %}
-    <h1>Edit Coach</h1>
+    <div class="container mt-5">
+        <h1 class="mb-4">Modifier les informations du Coach</h1>
 
-    {{ include('coach/_form.html.twig', {'button_label': 'Update'}) }}
+        <!-- Formulaire de modification -->
+        <div class="card shadow-sm mb-4">
+            <div class="card-body">
+                {{ form_start(form) }}
+                <!-- Champs de formulaire -->
+                <div class="mb-3">
+                    {{ form_row(form.nom) }}
+                </div>
+                <div class="mb-3">
+                    {{ form_row(form.experience) }}
+                </div>
+                <div class="mb-3">
+                    {{ form_row(form.specialite) }}
+                </div>
 
-    <a href="{{ path('app_coach_index') }}">back to list</a>
+                <!-- Bouton de mise à jour -->
+                <div class="mt-4 text-center">
+                    <button type="submit" class="btn btn-primary">
+                        Mettre à jour
+                    </button>
+                </div>
+                {{ form_end(form) }}
+            </div>
+        </div>
 
-    {{ include('coach/_delete_form.html.twig') }}
+        <!-- Actions -->
+        <div class="d-flex gap-3 justify-content-between mt-4">
+            <!-- Retour à la liste -->
+            <a href="{{ path('app_coach_index') }}" class="btn btn-secondary">
+                <i class="fas fa-arrow-left"></i> Retour à la liste
+            </a>
+
+            <!-- Formulaire de suppression -->
+            <div class="mt-3">
+                {{ include('coach/_delete_form.html.twig') }}
+            </div>
+        </div>
+    </div>
 {% endblock %}

@@ -1,11 +1,33 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}New Coach{% endblock %}
+{% block title %}Créer un Nouveau Coach{% endblock %}
 
 {% block body %}
-    <h1>Create new Coach</h1>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Créer un Nouveau Coach</h1>
 
-    {{ include('coach/_form.html.twig') }}
+        <div class="card p-4 shadow-sm">
+            {{ form_start(form) }}
+            <div class="mb-3">
+                <label for="{{ form.nom.vars.id }}" class="form-label">Nom</label>
+                {{ form_widget(form.nom, {'attr': {'class': 'form-control'}}) }}
+            </div>
+            <div class="mb-3">
+                <label for="{{ form.experience.vars.id }}" class="form-label">Expérience</label>
+                {{ form_widget(form.experience, {'attr': {'class': 'form-control'}}) }}
+            </div>
+            <div class="mb-3">
+                <label for="{{ form.specialite.vars.id }}" class="form-label">Spécialité</label>
+                {{ form_widget(form.specialite, {'attr': {'class': 'form-control'}}) }}
+            </div>
+            <div class="mb-3 text-center">
+                <button type="submit" class="btn btn-primary">Enregistrer</button>
+            </div>
+            {{ form_end(form) }}
+        </div>
 
-    <a href="{{ path('app_coach_index') }}">back to list</a>
+        <div class="d-flex justify-content-end mt-3">
+            <a href="{{ path('app_coach_index') }}" class="btn btn-secondary">Retour à la liste</a>
+        </div>
+    </div>
 {% endblock %}
