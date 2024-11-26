@@ -48,7 +48,7 @@ class HomeController extends AbstractController
         ]);
     }
 
-    #[Route('/coach', name: 'app_coach')]
+    #[Route('/home/coach', name: 'app_coach')]
     public function coach(): Response
     {
         return $this->render('coach.html.twig', [
