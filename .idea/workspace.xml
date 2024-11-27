@@ -5,14 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f2d5d27-424f-47bd-b179-1f741ccd82d1" name="Changes" comment="twig">
+      <change afterPath="$PROJECT_DIR$/templates/home.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/coach/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/coach/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/coach/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/coach/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog-single.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog-single.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/coach.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/coach.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/contact.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pricing.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pricing.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/services.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/services.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/success-stories.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/success-stories.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,8 +195,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\FitUp-Project-nejia\public" />
       <recent name="C:\xampp\htdocs\FitUp-Project-nejia\templates" />
+      <recent name="C:\xampp\htdocs\FitUp-Project-nejia\public" />
       <recent name="C:\xampp\htdocs\FitUp-Project-nejia\templates\coach" />
     </key>
   </component>
@@ -232,7 +236,7 @@
       <workItem from="1732542811713" duration="14364000" />
       <workItem from="1732568160852" duration="4212000" />
       <workItem from="1732572446975" duration="4965000" />
-      <workItem from="1732611914002" duration="22526000" />
+      <workItem from="1732611914002" duration="25781000" />
     </task>
     <servers />
   </component>
