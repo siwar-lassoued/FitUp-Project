@@ -6,11 +6,13 @@ use App\Repository\UserRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 #[ORM\Entity(repositoryClass: UserRepository::class)]
 #[ORM\UniqueConstraint(name: 'UNIQ_IDENTIFIER_EMAIL', fields: ['email'])]
+#[UniqueEntity(fields: ['email'], message: 'There is already an account with this email')]
 class User implements UserInterface, PasswordAuthenticatedUserInterface
 {
     #[ORM\Id]
@@ -33,9 +35,11 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column]
     private ?string $password = null;
 
-    #[ORM\ManyToOne(inversedBy: 'user')]
-    #[ORM\JoinColumn(nullable: false)]
-    private ?RDV $rDV = null;
+    /**
+     * @var Collection<int, RDV>
+     */
+    #[ORM\OneToMany(targetEntity: RDV::class, mappedBy: 'user')]
+    private Collection $rDVs;
 
     /**
      * @var Collection<int, Recette>
@@ -49,15 +53,9 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\OneToMany(targetEntity: Exercice::class, mappedBy: 'user')]
     private Collection $exercice;
 
-
-    /**
-     * @var Collection<int, self>
-     */
-
-
     public function __construct()
     {
-        $this->users = new ArrayCollection();
+        $this->rDVs = new ArrayCollection();
         $this->recette = new ArrayCollection();
         $this->exercice = new ArrayCollection();
     }
@@ -79,33 +77,19 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return $this;
     }
 
-    /**
-     * A visual identifier that represents this user.
-     *
-     * @see UserInterface
-     */
     public function getUserIdentifier(): string
     {
         return (string) $this->email;
     }
 
-    /**
-     * @see UserInterface
-     *
-     * @return list<string>
-     */
     public function getRoles(): array
     {
         $roles = $this->roles;
-        // guarantee every user at least has ROLE_USER
         $roles[] = 'ROLE_USER';
 
         return array_unique($roles);
     }
 
-    /**
-     * @param list<string> $roles
-     */
     public function setRoles(array $roles): static
     {
         $this->roles = $roles;
@@ -113,9 +97,6 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return $this;
     }
 
-    /**
-     * @see PasswordAuthenticatedUserInterface
-     */
     public function getPassword(): ?string
     {
         return $this->password;
@@ -128,54 +109,36 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return $this;
     }
 
-    /**
-     * @see UserInterface
-     */
     public function eraseCredentials(): void
     {
-        // If you store any temporary, sensitive data on the user, clear it here
-        // $this->plainPassword = null;
+        // Clear sensitive data
     }
-
 
     /**
-     * @return Collection<int, self>
+     * @return Collection<int, RDV>
      */
-    public function getUsers(): Collection
+    public function getRDVs(): Collection
     {
-        return $this->users;
+        return $this->rDVs;
     }
 
-    public function addUser(self $user): static
+    public function addRDV(RDV $rDV): static
     {
-        if (!$this->users->contains($user)) {
-            $this->users->add($user);
-            $user->setRDV($this);
+        if (!$this->rDVs->contains($rDV)) {
+            $this->rDVs->add($rDV);
+            $rDV->setUser($this);
         }
 
         return $this;
     }
 
-    public function removeUser(self $user): static
+    public function removeRDV(RDV $rDV): static
     {
-        if ($this->users->removeElement($user)) {
-            // set the owning side to null (unless already changed)
-            if ($user->getRDV() === $this) {
-                $user->setRDV(null);
+        if ($this->rDVs->removeElement($rDV)) {
+            if ($rDV->getUser() === $this) {
+                $rDV->setUser(null);
             }
         }
-
-        return $this;
-    }
-
-    public function getRDV(): ?RDV
-    {
-        return $this->rDV;
-    }
-
-    public function setRDV(?RDV $rDV): static
-    {
-        $this->rDV = $rDV;
 
         return $this;
     }
@@ -201,7 +164,6 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function removeRecette(Recette $recette): static
     {
         if ($this->recette->removeElement($recette)) {
-            // set the owning side to null (unless already changed)
             if ($recette->getUser() === $this) {
                 $recette->setUser(null);
             }
@@ -231,7 +193,6 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function removeExercice(Exercice $exercice): static
     {
         if ($this->exercice->removeElement($exercice)) {
-            // set the owning side to null (unless already changed)
             if ($exercice->getUser() === $this) {
                 $exercice->setUser(null);
             }

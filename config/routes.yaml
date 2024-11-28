@@ -6,3 +6,15 @@ controllers:
 home:
     path: /
     controller: App\Controller\DefaultController::index
+
+admin_dashboard:
+    path: /admin
+    controller: App\Controller\AdminController::index
+
+coach_dashboard:
+    path: /coach
+    controller: App\Controller\CoachController::index
+
+user_dashboard:
+    path: /user
+    controller: App\Controller\UserController::index

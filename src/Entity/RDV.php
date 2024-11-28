@@ -20,10 +20,11 @@ class RDV
     private ?\DateTimeInterface $date = null;
 
     /**
-     * @var Collection<int, User>
+     * @var User The user associated with the RDV
      */
-    #[ORM\OneToMany(targetEntity: User::class, mappedBy: 'rDV')]
-    private Collection $user;
+    #[ORM\ManyToOne(targetEntity: User::class, inversedBy: 'rDVs')]
+    #[ORM\JoinColumn(nullable: false)]
+    private ?User $user = null;
 
     /**
      * @var Collection<int, Coach>
@@ -33,7 +34,6 @@ class RDV
 
     public function __construct()
     {
-        $this->user = new ArrayCollection();
         $this->coach = new ArrayCollection();
     }
 
@@ -54,32 +54,14 @@ class RDV
         return $this;
     }
 
-    /**
-     * @return Collection<int, User>
-     */
-    public function getUser(): Collection
+    public function getUser(): ?User
     {
         return $this->user;
     }
 
-    public function addUser(User $user): static
+    public function setUser(?User $user): static
     {
-        if (!$this->user->contains($user)) {
-            $this->user->add($user);
-            $user->setRDV($this);
-        }
-
-        return $this;
-    }
-
-    public function removeUser(User $user): static
-    {
-        if ($this->user->removeElement($user)) {
-            // set the owning side to null (unless already changed)
-            if ($user->getRDV() === $this) {
-                $user->setRDV(null);
-            }
-        }
+        $this->user = $user;
 
         return $this;
     }
@@ -105,7 +87,6 @@ class RDV
     public function removeCoach(Coach $coach): static
     {
         if ($this->coach->removeElement($coach)) {
-            // set the owning side to null (unless already changed)
             if ($coach->getRDV() === $this) {
                 $coach->setRDV(null);
             }
