@@ -39,7 +39,9 @@
 </div>
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-        <a class="navbar-brand" >Health<span>coach<i class="fa fa-leaf"></i></span></a>
+        <a class="navbar-brand" href="/">
+            <img src="{{ asset('images/logo _fitup.png') }}" alt="Logo" style="height: 100px;">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="fa fa-bars"></span> Menu
         </button>
@@ -53,8 +55,13 @@
                 <li class="nav-item"><a href="/home/success" class="nav-link">Stories</a></li>
                 <li class="nav-item"><a href="/home/blog" class="nav-link">Blog</a></li>
                 <li class="nav-item"><a href="/home/contact" class="nav-link">Contact</a></li>
-                <li class="nav-item"><a href="/login" class="nav-link">LogIn</a></li>
-                <li class="nav-item"><a href="/logout" class="nav-link">LogOut</a></li>
+
+                {% if app.user %}
+                    <li class="nav-item"><a href="{{ path('app_logout') }}" class="nav-link">LogOut</a></li>
+                {% else %}
+                    <li class="nav-item"><a href="{{ path('app_login') }}" class="nav-link">LogIn</a></li>
+                {% endif %}
+
 
 
             </ul>
@@ -67,76 +74,63 @@
 
         {% endblock %}
     </div>
-</div>
-<footer class="footer">
+</div><footer class="footer" style="background-color: #ffffff; color: black;">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-10 col-lg-6">
-                <div class="subscribe mb-5">
-                    <form action="#" class="subscribe-form">
-                        <div class="form-group d-flex">
-                            <div class="form-group">
-                                <label for="email_address">Enter email address</label>
-                                <input type="text" id="email_address" class="form-control rounded-left" placeholder="Enter email address">
-                            </div>
-                            <input type="submit" value="Subscribe" class="form-control submit px-3">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
         <div class="row">
             <div class="col-md-4 col-lg-5">
                 <div class="row">
                     <div class="col-md-12 col-lg-8 mb-md-0 mb-4">
-                        <h2 class="footer-heading"><a href="#" class="logo">Health<span>care</span></a></h2>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                        <a href="#">read more <span class="ion-ios-arrow-round-forward"></span></a>
+                        <h2 class="footer-heading">
+                            <a href="#" class="logo">
+                                <img src="{{ asset('images/logo _fitup.png') }}" alt="Logo" style="height: 150px;">
+                            </a>
+                        </h2>
+                        <p style="color: black;">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        <a href="#" style="color: blue;">read more <span class="ion-ios-arrow-round-forward"></span></a>
                     </div>
                 </div>
             </div>
             <div class="col-md-8 col-lg-7">
                 <div class="row">
                     <div class="col-md-3 mb-md-0 mb-4 border-left">
-                        <h2 class="footer-heading">Services</h2>
+                        <h2 class="footer-heading" style="color: black;">Services</h2>
                         <ul class="list-unstyled">
-                            <li><a href="#" class="py-1 d-block">Balance Body</a></li>
-                            <li><a href="#" class="py-1 d-block">Physical Activity</a></li>
-                            <li><a href="#" class="py-1 d-block">Fitness Program</a></li>
-                            <li><a href="#" class="py-1 d-block">Healthy Food</a></li>
+                            <li><a href="#" class="py-1 d-block" style="color: blue;">Balance Body</a></li>
+                            <li><a href="#" class="py-1 d-block" style="color: blue;">Physical Activity</a></li>
+                            <li><a href="#" class="py-1 d-block" style="color: blue;">Fitness Program</a></li>
+                            <li><a href="#" class="py-1 d-block" style="color: blue;">Healthy Food</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3 mb-md-0 mb-4 border-left">
-                        <h2 class="footer-heading">About</h2>
+                        <h2 class="footer-heading" style="color: black;">About</h2>
                         <ul class="list-unstyled">
-                            <li><a href="#" class="py-1 d-block">Staff</a></li>
-                            <li><a href="#" class="py-1 d-block">Team</a></li>
-                            <li><a href="#" class="py-1 d-block">Careers</a></li>
-                            <li><a href="#" class="py-1 d-block">Blog</a></li>
+                            <li><a href="#" class="py-1 d-block" style="color: blue;">Staff</a></li>
+                            <li><a href="#" class="py-1 d-block" style="color: blue;">Team</a></li>
+                            <li><a href="#" class="py-1 d-block" style="color: blue;">Careers</a></li>
+                            <li><a href="#" class="py-1 d-block" style="color: blue;">Blog</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3 mb-md-0 mb-4 border-left">
-                        <h2 class="footer-heading">Resources</h2>
+                        <h2 class="footer-heading" style="color: black;">Resources</h2>
                         <ul class="list-unstyled">
-                            <li><a href="#" class="py-1 d-block">Security</a></li>
-                            <li><a href="#" class="py-1 d-block">Global</a></li>
-                            <li><a href="#" class="py-1 d-block">Charts</a></li>
-                            <li><a href="#" class="py-1 d-block">Privacy</a></li>
+                            <li><a href="#" class="py-1 d-block" style="color: blue;">Security</a></li>
+                            <li><a href="#" class="py-1 d-block" style="color: blue;">Global</a></li>
+                            <li><a href="#" class="py-1 d-block" style="color: blue;">Charts</a></li>
+                            <li><a href="#" class="py-1 d-block" style="color: blue;">Privacy</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3 mb-md-0 mb-4 border-left">
-                        <h2 class="footer-heading">Social</h2>
+                        <h2 class="footer-heading" style="color: black;">Social</h2>
                         <ul class="list-unstyled">
-                            <li><a href="#" class="py-1 d-block">Facebook</a></li>
-                            <li><a href="#" class="py-1 d-block">Twitter</a></li>
-                            <li><a href="#" class="py-1 d-block">Instagram</a></li>
-                            <li><a href="#" class="py-1 d-block">Google</a></li>
+                            <li><a href="#" class="py-1 d-block" style="color: blue;">Facebook</a></li>
+                            <li><a href="#" class="py-1 d-block" style="color: blue;">Twitter</a></li>
+                            <li><a href="#" class="py-1 d-block" style="color: blue;">Instagram</a></li>
+                            <li><a href="#" class="py-1 d-block" style="color: blue;">Google</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 </footer>
 

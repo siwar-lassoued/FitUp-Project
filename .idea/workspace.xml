@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="0f2d5d27-424f-47bd-b179-1f741ccd82d1" name="Changes" comment="twig">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/coach.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/coach.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboards.base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboards.base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,7 +255,8 @@
       <workItem from="1733392284016" duration="2084000" />
       <workItem from="1733917843324" duration="1814000" />
       <workItem from="1733991367817" duration="15749000" />
-      <workItem from="1734084971617" duration="12020000" />
+      <workItem from="1734084971617" duration="20829000" />
+      <workItem from="1734123112339" duration="4559000" />
     </task>
     <servers />
   </component>
@@ -260,22 +266,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="twig" />
     <option name="LAST_COMMIT_MESSAGE" value="twig" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/templates/admin/index.html.twig</url>
-          <line>471</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/templates/admin/index.html.twig</url>
-          <line>470</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
