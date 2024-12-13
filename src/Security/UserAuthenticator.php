@@ -49,13 +49,13 @@ class UserAuthenticator extends AbstractLoginFormAuthenticator
         }
         $user = $token->getUser(); // Get the authenticated user
         if (in_array('ROLE_ADMIN', $user->getRoles(), true)) {
-            return new RedirectResponse($this->urlGenerator->generate('admin_dashboard')); // Redirect to the admin dashboard
+            return new RedirectResponse($this->urlGenerator->generate('/admin')); // Redirect to the admin dashboard
         }
         if (in_array('ROLE_COACH', $user->getRoles(), true)) {
-            return new RedirectResponse($this->urlGenerator->generate('coach_dashboard')); // Redirect to the coach dashboard
+            return new RedirectResponse($this->urlGenerator->generate('home')); // Redirect to the coach dashboard
         }
         if (in_array('ROLE_USER', $user->getRoles(), true)) {
-            return new RedirectResponse($this->urlGenerator->generate('user_dashboard')); // Redirect to the user dashboard
+            return new RedirectResponse($this->urlGenerator->generate('home')); // Redirect to the user dashboard
         }
         return new RedirectResponse($this->urlGenerator->generate('homepage')); // Redirect to homepage
     }

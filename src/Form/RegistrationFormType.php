@@ -9,6 +9,7 @@ use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Component\Form\CallbackTransformer;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Validator\Constraints\IsTrue;
 use Symfony\Component\Validator\Constraints\Length;
@@ -29,12 +30,11 @@ class RegistrationFormType extends AbstractType
             ])
             ->add('roles', ChoiceType::class, [
                 'choices' => [
-                    'User' => 'ROLE_USER',
-                    'Admin' => 'ROLE_ADMIN',
                     'Coach' => 'ROLE_COACH',
+                    'Client' => 'ROLE_CLIENT',
                 ],
-                'expanded' => true, // renders as radio buttons instead of checkboxes
-                'multiple' => true, // only one role can be selected
+                'expanded' => true, // renders as radio buttons
+                'multiple' => false, // ensures only one role can be selected
                 'label' => 'Select Role',
             ])
             ->add('agreeTerms', CheckboxType::class, [
@@ -59,7 +59,21 @@ class RegistrationFormType extends AbstractType
                     ]),
                 ],
             ]);
+
+        // Optional: Add a CallbackTransformer if needed
+        $builder->get('roles')
+            ->addModelTransformer(new CallbackTransformer(
+                function ($roleAsArray) {
+                    // Transform array to a single string for form display
+                    return is_array($roleAsArray) && count($roleAsArray) > 0 ? $roleAsArray[0] : null;
+                },
+                function ($roleAsString) {
+                    // Transform single string back to array for the entity
+                    return [$roleAsString];
+                }
+            ));
     }
+
     public function configureOptions(OptionsResolver $resolver): void
     {
         $resolver->setDefaults([
