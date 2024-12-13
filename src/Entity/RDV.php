@@ -23,7 +23,7 @@ class RDV
      * @var User The user associated with the RDV
      */
     #[ORM\ManyToOne(targetEntity: User::class, inversedBy: 'rDVs')]
-    #[ORM\JoinColumn(nullable: false)]
+    #[ORM\JoinColumn(nullable: true)]
     private ?User $user = null;
 
     /**

@@ -6,128 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0f2d5d27-424f-47bd-b179-1f741ccd82d1" name="Changes" comment="twig">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/img/testimonial-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/img/user.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/lib/chart/chart.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/lib/easing/easing.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/lib/easing/easing.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/lib/owlcarousel/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/lib/owlcarousel/assets/ajax-loader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/lib/owlcarousel/assets/owl.carousel.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/lib/owlcarousel/assets/owl.carousel.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/lib/owlcarousel/assets/owl.theme.default.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/lib/owlcarousel/assets/owl.theme.default.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/lib/owlcarousel/assets/owl.theme.green.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/lib/owlcarousel/assets/owl.theme.green.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/lib/owlcarousel/assets/owl.video.play.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/lib/owlcarousel/owl.carousel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/lib/owlcarousel/owl.carousel.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/lib/tempusdominus/css/tempusdominus-bootstrap-4.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/lib/tempusdominus/js/moment-timezone.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/lib/tempusdominus/js/moment.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/lib/tempusdominus/js/tempusdominus-bootstrap-4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/lib/waypoints/links.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/lib/waypoints/waypoints.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Security/UserAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/UserAuthenticator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/admin/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashmin-1.0.0/404.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/blank.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashmin-1.0.0/blank.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/button.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashmin-1.0.0/button.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/chart.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashmin-1.0.0/chart.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/element.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashmin-1.0.0/element.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashmin-1.0.0/form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashmin-1.0.0/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_accordion.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_alert.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_badge.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_breadcrumb.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_button-group.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_card.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_carousel.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_close.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_containers.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_dropdown.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_forms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_functions.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_grid.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_helpers.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_images.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_list-group.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_mixins.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_modal.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_nav.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_navbar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_offcanvas.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_pagination.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_popover.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_progress.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_reboot.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_root.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_spinners.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_tables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_toasts.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_tooltip.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_transitions.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_type.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_utilities.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/bootstrap-grid.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/bootstrap-reboot.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/bootstrap-utilities.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/bootstrap.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/forms/_floating-labels.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/forms/_form-check.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/forms/_form-control.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/forms/_form-range.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/forms/_form-select.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/forms/_form-text.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/forms/_input-group.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/forms/_labels.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/forms/_validation.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/helpers/_clearfix.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/helpers/_colored-links.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/helpers/_position.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/helpers/_ratio.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/helpers/_stretched-link.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/helpers/_text-truncation.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/helpers/_visually-hidden.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/mixins/_alert.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/mixins/_border-radius.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/mixins/_box-shadow.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/mixins/_breakpoints.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/mixins/_buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/mixins/_caret.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/mixins/_clearfix.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/mixins/_color-scheme.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/mixins/_container.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/mixins/_deprecate.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/mixins/_forms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/mixins/_gradients.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/mixins/_grid.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/mixins/_image.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/mixins/_list-group.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/mixins/_lists.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/mixins/_pagination.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/mixins/_reset-text.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/mixins/_resize.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/mixins/_table-variants.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/mixins/_text-truncate.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/mixins/_transition.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/mixins/_utilities.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/mixins/_visually-hidden.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/utilities/_api.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/scss/bootstrap/scss/vendor/_rfs.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashmin-1.0.0/signin.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashmin-1.0.0/signup.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/table.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashmin-1.0.0/table.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/typography.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashmin-1.0.0/typography.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashmin-1.0.0/widget.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashmin-1.0.0/widget.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -371,7 +250,7 @@
       <workItem from="1733392284016" duration="2084000" />
       <workItem from="1733917843324" duration="1814000" />
       <workItem from="1733991367817" duration="15749000" />
-      <workItem from="1734084971617" duration="10594000" />
+      <workItem from="1734084971617" duration="12020000" />
     </task>
     <servers />
   </component>
@@ -387,12 +266,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/templates/admin/index.html.twig</url>
-          <line>475</line>
+          <line>471</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/templates/admin/index.html.twig</url>
-          <line>474</line>
+          <line>470</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

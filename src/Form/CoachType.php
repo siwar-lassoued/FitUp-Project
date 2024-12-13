@@ -17,10 +17,6 @@ class CoachType extends AbstractType
             ->add('nom')
             ->add('experience')
             ->add('specialite')
-            ->add('rDV', EntityType::class, [
-                'class' => RDV::class,
-                'choice_label' => 'id',
-            ])
         ;
     }
 

@@ -31,7 +31,7 @@ class Coach
     private Collection $Exercice;
 
     #[ORM\ManyToOne(inversedBy: 'coach')]
-    #[ORM\JoinColumn(nullable: false)]
+    #[ORM\JoinColumn(nullable: true)]
     private ?RDV $rDV = null;
 
     /**
