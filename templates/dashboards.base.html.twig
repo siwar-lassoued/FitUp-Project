@@ -34,7 +34,7 @@
     {% endblock %}
 
 </head>
-<body>
+
 {% block navbar %}
 <div class="container-xxl position-relative bg-white d-flex p-0">
     <!-- Spinner Start -->
@@ -48,7 +48,11 @@
     <div class="sidebar pe-4 pb-3">
         <nav class="navbar bg-light navbar-light">
             <a href="{{ asset('/admin')}}" class="navbar-brand mx-4 mb-3">
-                <h5 class="text-primary"><i class="fa fa-hashtag me-2"></i>Dashboard Admin</h5>
+                <h5 class="text-primary">
+                    <a href="{{ asset('/admin')}}" class="navbar-brand mx-4 mb-3 d-flex align-items-center">
+                        <img src="{{ asset('images/logo _fitup.png') }}" alt="Logo" style="height: 100px; width: auto;margin-right: 50px;">
+                    </a>
+                </h5>
             </a>
             <div class="d-flex align-items-center ms-4 mb-4">
                 <div class="position-relative">
@@ -163,7 +167,6 @@
         </div>
     </nav>
     <!-- Navbar End -->
-
 {% endblock %}
 <div class="container mt-4">
     {% block body %}
@@ -184,6 +187,7 @@
 
 <!-- Template Javascript -->
 <script src="{{ asset('asset/js/main.js') }}"></script>
+
 {% endblock %}
-</body>
-</html>
+</div>
+</div>
