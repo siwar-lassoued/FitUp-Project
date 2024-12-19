@@ -6,7 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="0f2d5d27-424f-47bd-b179-1f741ccd82d1" name="Changes" comment="twig">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/coach/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/coach/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/coach/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/coach/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/coach/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/coach/show.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/dashboards.base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboards.base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/exercice/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/exercice/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/exercice/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/exercice/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/exercice/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/exercice/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/rdv/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rdv/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/rdv/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rdv/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/rdv/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rdv/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/recette/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recette/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/recette/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recette/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/recette/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recette/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,7 +267,8 @@
       <workItem from="1733917843324" duration="1814000" />
       <workItem from="1733991367817" duration="15749000" />
       <workItem from="1734084971617" duration="20829000" />
-      <workItem from="1734123112339" duration="6318000" />
+      <workItem from="1734123112339" duration="6451000" />
+      <workItem from="1734170519546" duration="7041000" />
     </task>
     <servers />
   </component>

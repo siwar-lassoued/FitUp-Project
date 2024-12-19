@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class HomeController extends AbstractController
 {
-    #[Route('/', name: 'app_home')]
+
     #[Route('/home', name: 'app_home_redirect')]
     public function home(): Response
     {
@@ -28,9 +28,7 @@ class HomeController extends AbstractController
     #[Route('/home/blog', name: 'app_blog')]
     public function blog(): Response
     {
-        return $this->render('blog.html.twig', [
-            'controller_name' => 'HomeController',
-        ]);
+        return $this->render('blog.html.twig');
     }
 
     #[Route('/home/success', name: 'app_success')]
