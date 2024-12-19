@@ -29,7 +29,7 @@ class RDV
     /**
      * @var Collection<int, Coach>
      */
-    #[ORM\OneToMany(targetEntity: Coach::class, mappedBy: 'rDV')]
+    #[ORM\OneToMany(targetEntity: Coach::class, mappedBy: 'rDVs')]
     private Collection $coach;
 
     public function __construct()

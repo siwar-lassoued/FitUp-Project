@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Attribute\Route;
 class HomeController extends AbstractController
 {
 
-    #[Route('/home', name: 'app_home_redirect')]
+    #[Route('/', name: 'app_home_redirect')]
     public function home(): Response
     {
         return $this->render('home.html.twig', [
