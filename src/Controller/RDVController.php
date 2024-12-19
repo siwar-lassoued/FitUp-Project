@@ -26,12 +26,27 @@ final class RDVController extends AbstractController
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
         $rDV = new RDV();
+        $user = $this->getUser(); // Get the logged-in user
+
+        if (!$user) {
+            throw $this->createAccessDeniedException('You must be logged in to book a rendez-vous.');
+        }
+
+        // Assign the user to the RDV
+        $rDV->setUser($user);
+
         $form = $this->createForm(RDVType::class, $rDV);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            // Set the default status
+            $rDV->setStatus('pending');
+
+            // Save the RDV to the database
             $entityManager->persist($rDV);
             $entityManager->flush();
+
+            $this->addFlash('success', 'Rendez-vous booked successfully!');
 
             return $this->redirectToRoute('app_r_d_v_index', [], Response::HTTP_SEE_OTHER);
         }
@@ -41,6 +56,7 @@ final class RDVController extends AbstractController
             'form' => $form,
         ]);
     }
+
 
     #[Route('/{id}', name: 'app_r_d_v_show', methods: ['GET'])]
     public function show(RDV $rDV): Response
@@ -67,6 +83,24 @@ final class RDVController extends AbstractController
             'form' => $form,
         ]);
     }
+
+    #[Route('/coach/requests', name: 'app_r_d_v_coach_requests', methods: ['GET'])]
+    public function coachRequests(EntityManagerInterface $entityManager): Response
+    {
+        $coach = $this->getUser(); // Get the logged-in coach
+
+        if (!$coach || !$coach->getRoles() || !in_array('ROLE_COACH', $coach->getRoles())) {
+            throw $this->createAccessDeniedException('Only coaches can access this page.');
+        }
+
+        // Fetch all rendez-vous for this coach
+        $rendezVous = $entityManager->getRepository(RDV::class)->findBy(['coach' => $coach]);
+
+        return $this->render('rdv/coach_requests.html.twig', [
+            'rendezVous' => $rendezVous,
+        ]);
+    }
+
 
     #[Route('/{id}', name: 'app_r_d_v_delete', methods: ['POST'])]
     public function delete(Request $request, RDV $rDV, EntityManagerInterface $entityManager): Response

@@ -7,6 +7,7 @@ use App\Entity\User;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -24,7 +25,11 @@ class UserType extends AbstractType
                 'multiple' => true, // Allow multiple roles
                 'expanded' => true, // Render as checkboxes
             ])
-            ->add('password')
+            ->add('password', PasswordType::class, [ // Change to PasswordType
+                'label' => 'Password',
+                'required' => true,
+                'attr' => ['autocomplete' => 'new-password'], // Optional for user experience
+            ])
             ->add('rDVs', EntityType::class, [ // Change 'rDV' to 'rDVs'
                 'class' => RDV::class,
                 'choice_label' => 'id',
@@ -33,7 +38,6 @@ class UserType extends AbstractType
             ])
         ;
     }
-
     public function configureOptions(OptionsResolver $resolver): void
     {
         $resolver->setDefaults([

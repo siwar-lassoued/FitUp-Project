@@ -1,0 +1,32 @@
+{% extends 'dashboards.base.html.twig' %}
+
+{% block body %}
+    <h1>My Rendez-vous Requests</h1>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Date</th>
+            <th>User</th>
+            <th>Status</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for rdv in rendezVous %}
+            <tr>
+                <td>{{ rdv.id }}</td>
+                <td>{{ rdv.date ? rdv.date|date('Y-m-d') : '' }}</td>
+                <td>{{ rdv.user.username }}</td>
+                <td>{{ rdv.status }}</td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">No requests found.</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_home_redirect') }}" class="btn btn-secondary mt-3">Back to Home</a>
+{% endblock %}

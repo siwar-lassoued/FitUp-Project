@@ -19,22 +19,20 @@ class RDV
     #[ORM\Column(type: Types::DATE_MUTABLE)]
     private ?\DateTimeInterface $date = null;
 
-    /**
-     * @var User The user associated with the RDV
-     */
     #[ORM\ManyToOne(targetEntity: User::class, inversedBy: 'rDVs')]
     #[ORM\JoinColumn(nullable: true)]
     private ?User $user = null;
 
-    /**
-     * @var Collection<int, Coach>
-     */
-    #[ORM\OneToMany(targetEntity: Coach::class, mappedBy: 'rDVs')]
-    private Collection $coach;
+    #[ORM\ManyToOne(targetEntity: Coach::class, inversedBy: 'rDVs')]
+    #[ORM\JoinColumn(nullable: false)]
+    private ?Coach $coach = null;
+
+    #[ORM\Column(type: Types::STRING, length: 20)]
+    private ?string $status = 'pending'; // Default status
 
     public function __construct()
     {
-        $this->coach = new ArrayCollection();
+        $this->status = 'pending';
     }
 
     public function getId(): ?int
@@ -66,31 +64,26 @@ class RDV
         return $this;
     }
 
-    /**
-     * @return Collection<int, Coach>
-     */
-    public function getCoach(): Collection
+    public function getCoach(): ?Coach
     {
         return $this->coach;
     }
 
-    public function addCoach(Coach $coach): static
+    public function setCoach(?Coach $coach): static
     {
-        if (!$this->coach->contains($coach)) {
-            $this->coach->add($coach);
-            $coach->setRDV($this);
-        }
+        $this->coach = $coach;
 
         return $this;
     }
 
-    public function removeCoach(Coach $coach): static
+    public function getStatus(): ?string
     {
-        if ($this->coach->removeElement($coach)) {
-            if ($coach->getRDV() === $this) {
-                $coach->setRDV(null);
-            }
-        }
+        return $this->status;
+    }
+
+    public function setStatus(string $status): static
+    {
+        $this->status = $status;
 
         return $this;
     }

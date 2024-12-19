@@ -1,1 +1,17 @@
 {% extends 'dashboards.base.html.twig' %}
+
+{% block body %}
+    <h1>Book a Rendez-vous</h1>
+
+    {{ form_start(form) }}
+    <div class="form-group">
+        {{ form_row(form.date, {'label': 'Date'}) }}
+    </div>
+    <div class="form-group">
+        {{ form_row(form.coach, {'label': 'Coach'}) }}
+    </div>
+    <button type="submit" class="btn btn-primary">Book</button>
+    {{ form_end(form) }}
+
+    <a href="{{ path('app_r_d_v_index') }}" class="btn btn-secondary mt-3">Back to List</a>
+{% endblock %}

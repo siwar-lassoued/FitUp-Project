@@ -40,9 +40,15 @@ class RegistrationController extends AbstractController
             // Save the user to the database
             $entityManager->persist($user);
             $entityManager->flush();
+            $coach = $this->getUser(); // Get the logged-in coach
 
-            // Redirect to login or another route after successful registration
-            return $this->redirectToRoute('app_login');
+            if (!$coach || !$coach->getRoles() || !in_array('ROLE_COACH', $coach->getRoles())) {
+                return $this->redirectToRoute('app_coach_new');
+            }
+
+             else {
+                return $this->redirectToRoute('app_login');  // Redirect to login page for regular users
+            }
         }
 
         return $this->render('registration/register.html.twig', [
